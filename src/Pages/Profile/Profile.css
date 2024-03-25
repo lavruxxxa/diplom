@@ -1,0 +1,97 @@
+.profile-container {
+    color: white;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image: url('../../assets/background.jpg');
+    overflow-y: visible; /* Добавленное свойство */
+}
+  
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 30px;
+    flex: 1;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(35px);
+    box-shadow: 0px -0px 10px 5px rgba(0,0,0,0.5);
+}
+  
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+  
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+@media (max-width: 500px) {
+    .profile-photo { 
+        width: 150px;
+        height: 150px;
+    }
+}   
+  
+.profile-name {
+    font-size: 40px;
+    margin: 0px 0px 10px 0px;
+}
+  
+.profile-nickname {
+    font-size: 18px;
+    margin: 0px 0px 30px 0px;
+}
+  
+.profile-address {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 30px;
+}
+  
+.profile-rating {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 16px;
+    margin: 0;
+}
+
+.content-change-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-flow: row nowrap;
+}
+
+.content-change-button {
+    padding: 10px;
+    flex-grow: 1;
+    border: none;
+    color: rgba(255,255,255,0.7);
+    border-top: solid rgba(255,255,255,0.2);
+    border-bottom: solid rgba(255,255,255,0.2);
+    background: none;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.content-change-button.active {
+    color: rgba(255,255,255,0.9);
+    border-top: solid rgba(255,255,255,0.9);
+    border-bottom: solid rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.1);
+}
+
+  
+
+  
