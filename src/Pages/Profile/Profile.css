@@ -59,8 +59,8 @@
   
 .profile-rating {
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 10px;
+    right: 10px;
     font-size: 16px;
     margin: 0;
 }
@@ -85,7 +85,7 @@
     transition: all 0.5s ease;
 }
 
-.content-change-button.active {
+.content-change-button:focus {
     color: rgba(255,255,255,0.9);
     border-top: solid rgba(255,255,255,0.9);
     border-bottom: solid rgba(255,255,255,0.9);

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Navigation from '../../Components/Novigation/Navigation'; 
+import Navigation from '../../Components/Nаvigation/Navigation'; 
 import Details from '../../Components/Details/Details'; 
 import BooksList from '../../Components/BooksList/BooksList';
 import FeedbackList from '../../Components/FeedbackList/FeedbackList';
@@ -48,9 +48,9 @@ function Profile() {
                 <p className="profile-nickname">@johndoe123</p>
                 <p className="profile-rating">Rating: 5 stars</p>
                 <div className='content-change-buttons'>
-                    <button className={`content-change-button ${showContent === '1' ? 'active' : ''}`} onClick={handleShowDetails}>details</button>
-                    <button className={`content-change-button ${showContent === '2' ? 'active' : ''}`} onClick={handleShowBooks}>books</button>
-                    <button className={`content-change-button ${showContent === '3' ? 'active' : ''}`} onClick={handleShowFeedback}>feedback</button>
+                    <button className='content-change-button' onClick={handleShowDetails}>details</button>
+                    <button className='content-change-button' onClick={handleShowBooks}>books</button>
+                    <button className='content-change-button' onClick={handleShowFeedback}>feedback</button>
                 </div>
                 {renderContent()}
             </div>
